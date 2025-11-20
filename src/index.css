@@ -1,0 +1,109 @@
+
+/* Make the whole page responsive */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* background: #f6f6f6; */
+  font-family: sans-serif;
+  background-color:#262626;
+    color: #D9D9D9;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Wrapper that centers everything on laptop and expands on mobile */
+.container {
+  width: 100%;
+  max-width: 900px; /* centers on laptop */
+  padding: 10px;
+}
+div#root{
+  /* border: 1px none blue; */
+  width: 500px;
+  height: max-content;
+  margin-inline: auto;
+  /* box-shadow: 0 0 5px 7px rgba(255, 255, 255, 0.5); */
+  box-shadow: 0 0 40px rgba(74, 144, 226, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Header Styling */
+header {
+  height: 65px;
+  background-color: rgb(62, 69, 193);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 3px;
+}
+
+header > h2 {
+  font-weight: bold;
+  margin-left: 15px;
+  letter-spacing: 0.5px;
+  font-size: 30px;
+}
+
+/* --- Responsive Fixes --- */
+@media (max-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+
+  header {
+    height: auto;
+    padding: 12px;
+  }
+
+  header > h2 {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  header > h2 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+}

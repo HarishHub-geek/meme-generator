@@ -1,0 +1,68 @@
+*{
+  font-family: sans-serif;
+}
+.container{
+  display: flex;
+  margin-top:15px ;
+  /* width: 475px; */
+}
+.container > label{
+  font-family: 'Arial Narrow Bold', sans-serif;
+  text-shadow: 5px 7px 15px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 3px 3px 5px #000000; */
+}
+.container > label > input{
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 25px;
+  width: 200px;
+}
+.btn-div{
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+.btn-div > button{
+  background-color: rgb(71, 71, 196);
+  color: white;
+  border-radius: 5px;
+  width: 250px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.btn-div > button:hover {
+  background-color: rgb(80, 80, 210);
+  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.5);
+}
+.meme-container{
+  position: relative;
+   /* width: 600px;  */
+  margin: auto;
+}
+.meme-container > img{
+  /* width: 450px;
+  height: 300px; */
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  cursor:not-allowed;
+}
+.top, .bottom{
+  position: absolute;
+  left: 50%;
+  font-family: Impact,sans serif;
+  font-size: 2.5em;
+  width: 90%;
+  padding: 10px;
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+  text-align: center;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+}
+.top{
+  top: 5%;
+}
+.bottom{
+  bottom: 5%;
+}
