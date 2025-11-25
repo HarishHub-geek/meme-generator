@@ -1,12 +1,12 @@
 import { useState,useEffect } from 'react'
 import './App.css'
+import babe from '../public/funny-face-baby.webp'
 
 function App() {
   const [meme, setMeme] = useState(
     { topText:"",
       bottomText :"",
-       imageUrl: "../src/assets/funny-face-baby.webp"
-      //imageUrl: "https://i.imgflip.com/30b1gx.jpghttps://i.imgflip.com/1ur9b0.jpg"
+      imageUrl: babe
     }
   )
   const [allMemes,setAllMemes] = useState([])
